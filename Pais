@@ -1,0 +1,36 @@
+package Package04;
+
+import java.util.ArrayList;
+
+public class Pais {
+
+	private String nome ;
+	private int codigoDDI;
+	
+	private ArrayList<Estado> estados = new ArrayList();
+	
+	public Pais(String nome, int codigoDDI) {
+		this.nome = nome;
+		this.codigoDDI = codigoDDI;
+	}
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public int getCodigoDDI() {
+		return this.codigoDDI ;
+	}
+	
+	public void addEstados(Estado e) {
+		this.estados.add(e);
+	}
+	
+	public ArrayList getEstados() {
+		return this.estados;
+	}
+	
+	public int contarEstados() {
+		return this.estados.size();
+	}
+}
