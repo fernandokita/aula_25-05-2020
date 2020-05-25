@@ -1,0 +1,27 @@
+package Package04;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Pais Brasil = new Pais("BRASIL", +55);
+		
+		Estado Parana = new Estado("PARANA", "PR", +44);
+		Estado SaoPaulo = new Estado("SAO PAULO","SP", +11);
+		Estado MatoGrosso = new Estado("MATO GROSSO","MT",+67);
+		
+		Brasil.addEstados(Parana);
+		Brasil.addEstados(SaoPaulo);
+		Brasil.addEstados(MatoGrosso);
+		
+		System.out.println("-----------------------------------");
+		
+		System.out.println("Pais :" + Brasil.getNome() );
+		
+		for(int i=0; i<Brasil.getEstados().size(); i++) {
+			System.out.println("Estados :" + Brasil.getEstados().get(i) );
+		}
+	
+		System.out.println("Quantidade de Estados :" + Brasil.contarEstados() );		
+	}
+}
