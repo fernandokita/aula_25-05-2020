@@ -1,0 +1,26 @@
+package Package04;
+
+public class Estado {
+
+	private String nome;
+	private String sigla;
+	private int codigoDDD;
+	
+	public Estado(String nome, String sigla, int codigoDDD) {
+		this.nome = nome;
+		this.sigla = sigla;
+		this.codigoDDD = codigoDDD;
+	}
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public String getSigla() {
+		return this.sigla;
+	}
+	
+	public int getCodigoDDD() {
+		return this.codigoDDD;
+	}
+}
